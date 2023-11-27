@@ -18,8 +18,14 @@
   -->
 
   <main>
+    <navbar>
+      <application name="@rafael-alves/navbar-micro"></application>
+    </navbar>
     <route default>
       <application name="@single-spa/welcome"></application>
+    </route>
+    <route path="/home">
+      <application name="@raf/Home"></application>
     </route>
   </main>
 </single-spa-router>
