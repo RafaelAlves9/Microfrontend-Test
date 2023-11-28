@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blue1);
+}
+:root{
+    --text1: #A5A4A6;
+    --blue1: #0F0C26;
+    --blue2: #131240;
+}

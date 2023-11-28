@@ -24,7 +24,13 @@
     <route default>
       <application name="@single-spa/welcome"></application>
     </route>
-    <route path="/home">
+    <route path="/movies">
+      <application name="@raf/Home"></application>
+    </route>
+    <route path="/" exact>
+      <application name="@raf/Home"></application>
+    </route>
+    <route path="/movies/:id">
       <application name="@raf/Home"></application>
     </route>
   </main>

@@ -1,0 +1,60 @@
+.movie_container{
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.movie_container > div{
+    text-align: center;
+    height: 25rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+.movie_container > div:hover{
+    transition: all .3s;
+    scale: 1.07;
+}
+.movie_container > div > div{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie_container > div > div > img{
+    width: 100%;
+}
+.movie_container > div > p{
+    padding-top: .3rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.pagination{
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pagination > p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.pagination > button{
+    width: 5rem;
+    height: 2rem;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.pagination > button:disabled{
+    background-color: #ffffffa6;
+}

@@ -1,6 +1,7 @@
 import * as singleSpa from "single-spa";
 import { AppBar, Box, Toolbar, Container, Button } from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
+import "./navbar.css";
 
 interface IPage {
   name: string;
@@ -23,13 +24,14 @@ const pages: IPage[] = [
 ];
 
 function ResponsiveAppBar() {
+
   const handleClickMenuOptions = (route: string) => {
     singleSpa.navigateToUrl(route);
   };
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className="navbar_container">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 
