@@ -18,6 +18,6 @@ Clone o repositório normalmente, ele já inclui todos os projetos:
 ### 2. Instale as dependências
 Em cada projeto dentro da pasta packages, execute: npm install
 
-3. Inicie os servidores
+### 3. Inicie os servidores
 Em cada projeto dentro da pasta packages, execute: npm start
 
